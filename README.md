@@ -2,7 +2,7 @@
 
 ****
 
-### Currently uses Memoose-js library and redis for cach
+### Currently uses Memoose-js library
 
 **Redis Chat Caching System**
 
