@@ -2,7 +2,7 @@
 
 ****
 
-### Currently uses Memoose-js library 
+### Currently uses Memoose-js library and redis for cach
 
 **Redis Chat Caching System**
 
@@ -34,7 +34,7 @@ This project implements a chat message caching system using Redis and MongoDB. I
 
 - memoose-js - Provides an efficient in-memory caching alternative to Redis
 
-**Role of memoose-js**
+## Role of memoose-js
 
 The memoose-js library plays a key role in improving performance by caching frequently accessed data in memory. Instead of querying MongoDB for recent messages on every request, memoose-js allows storing and retrieving data quickly, reducing database load and improving response times.
 
