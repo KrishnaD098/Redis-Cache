@@ -2,7 +2,6 @@
 
 ****
 
-### Currently uses Memoose-js library
 
 **Redis Chat Caching System**
 
@@ -10,7 +9,7 @@ This project implements a chat message caching system using Redis and MongoDB. I
 
 ### Features
 
-- Uses Redis for caching recent chat messages with a TTL of 180 seconds.
+- Uses Redis for caching recent chat messages with a TTL.
 
 - Stores messages in MongoDB for permanent storage.
 
@@ -46,6 +45,8 @@ Features of memoose-js in this project:
 
 - Improves scalability and responsiveness by handling in-memory operations efficiently.
 
+For detailed instructions on memoose-js library, refer to this [package page for memoose-js](https://www.npmjs.com/package/memoose-js)
+
 ### How to Run the Project
 
 1. **Clone the repository:**
@@ -59,24 +60,25 @@ Features of memoose-js in this project:
 
     ```
     npm install
+    npm i memoose-js
     ```
 
 3. **Start the Redis server:**   
 
     ```
-    npm install
+    redis-server
     ```
 
 4. **Run the backend server:**
 
     ```
-    npm install
+    npm start
     ```
 
 5. **Open the Redis CLI to monitor cache:**
 
     ```
-    npm install
+    redis-cli
     ```
 
 ### Get Involved
