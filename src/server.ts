@@ -4,8 +4,7 @@ import { Server, Socket } from "socket.io";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import Message from "./models/Message";
-import { createClient } from "redis"; // Updated Redis import
-
+import { createClient } from "redis";
 dotenv.config();
 
 const app = express();

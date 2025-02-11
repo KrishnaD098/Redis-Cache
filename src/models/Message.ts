@@ -10,7 +10,7 @@ const messageSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// Create an index on `timestamp` field for TTL expiration (180 minutes)
-messageSchema.index({ timestamp: 1 }, { expireAfterSeconds: 180 }); // 180 minutes = 180 * 60 seconds
+// Create an index on `timestamp` field for TTL expiration (180 second)
+messageSchema.index({ timestamp: 1 }, { expireAfterSeconds: 180 }); 
 
 export default mongoose.model("Message", messageSchema);
